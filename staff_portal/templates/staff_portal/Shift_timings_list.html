@@ -1,0 +1,7 @@
+{% extends 'index.html' %}
+{% block content %}
+<h2>Shift Timings</h2>
+{% for i in object_list %}
+<a href="{% url 'staff_update' i.id  %}"  class="button"><li>{{i.name}} <li> {{i.created_date}}</a> <br><br>
+{% endfor %}
+{% endblock %}

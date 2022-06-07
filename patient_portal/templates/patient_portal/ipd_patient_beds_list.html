@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+PATIENT CHECKOUT FORM
+
+    {% for object in object_list %}
+        <li><a href="{% url 'bed-del' object.id %}" class="button">{{ object.name }}</a></li>
+
+    <hr/>
+
+    {% empty %}
+    <li>No objects yet.</li>
+    {% endfor %}
+{% for obj in name %}
+    {{obj.pid}}
+{% endfor %}
+<a href="{% url 'bed-create' %}" class="button">Update bed</a>
+{% endblock %}

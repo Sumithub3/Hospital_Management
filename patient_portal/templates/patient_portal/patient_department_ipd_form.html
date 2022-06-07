@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+IPD FORM
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="button">
+</form>
+{% endblock %}

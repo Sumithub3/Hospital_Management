@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+PATIENT LIST
+{% for object in object_list %}
+    <li><a href="{% url 'bed-del' object.id %}" >{{object.pid}} </a> - {{ object.name }}</li>
+    <hr/>
+
+{% endfor %}
+<a href="{% url 'ipd' %}" class="button" > Move to IPD </a>
+{% endblock %}

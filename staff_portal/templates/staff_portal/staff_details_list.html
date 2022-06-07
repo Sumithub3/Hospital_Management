@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+
+{% for i in leaves %}
+<li>{{i.name}}</li>  <a href="{% url 'staff_update' i.id  %}" class="button">UPDATE  </a>
+<a href="{% url 'in' %}" class="button">ENTRY  </a> <a href="{% url 'out' %}" class="button">OUT</a>
+ <br><br>
+{% endfor %}
+{% endblock %}

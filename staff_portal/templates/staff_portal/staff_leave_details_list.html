@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block content %}
+<h2>LIST</h2>
+{% for i in context_list %}
+<a href="#">{{i.name}} ---------{{i.leave}}
+    {% endfor %}
+
+{% endblock %}
