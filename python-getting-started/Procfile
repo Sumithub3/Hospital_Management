@@ -1,1 +1,1 @@
-web: gunicorn allcare-hospital.wsgi --log-file -
+web: gunicorn HMS.wsgi
