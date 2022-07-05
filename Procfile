@@ -1,0 +1,1 @@
+web: gunicorn allcare-hospital.wsgi --log-file -
