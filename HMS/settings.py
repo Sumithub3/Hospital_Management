@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'staff_portal',
     'Instuments_management',
     'crispy_forms',
-    'tailwind',
+    
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'HMS.urls'
-TAILWIND_APP_NAME = 'patient_portal'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
