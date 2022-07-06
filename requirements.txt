@@ -13,3 +13,4 @@ requests==2.27.1
 sqlparse==0.4.2
 typing-extensions==4.2.0
 urllib3==1.26.9
+django-heroku
