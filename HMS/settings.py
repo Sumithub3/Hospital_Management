@@ -82,12 +82,11 @@ WSGI_APPLICATION = 'HMS.wsgi.application'
 
 DATABASES = {
     'default': {
-         'ENGINE': 'postgres://xipqzwvbvveash:1f9e07219dbd14395fa08a6fca6b8136502f39f6be98396ba73fe13bcc7fcbf5@ec2-34-239-241-121.compute-1.amazonaws.com:5432/d3ugfobbq0gjmr
-',
-        'NAME': 'd3ugfobbq0gjmr',
-        'USER': 'xipqzwvbvveash',
-        'PASSWORD': '1f9e07219dbd14395fa08a6fca6b8136502f39f6be98396ba73fe13bcc7fcbf5',
-        'PORT': '5432',
+         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mydb',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'PORT': '3306',
     }
 }
 
