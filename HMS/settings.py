@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     'patient_portal',
     'staff_portal',
     'Instuments_management',
-
+    'crispy_forms',
     
 ]
 
