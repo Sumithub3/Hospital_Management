@@ -16,8 +16,8 @@ SECRET_KEY = 'django-insecure-r8_%el-!s9_3$0hssoe35!8c!ku4n9k&@n#_(t_6142fvje8t1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['allcare-hospital.herokuapp.com','127.0.0.1:8000']
-
+#ALLOWED_HOSTS = ['allcare-hospital.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'staff_portal',
     'Instuments_management',
     'crispy_forms',
-    
+    'tailwind'
 ]
 
 MIDDLEWARE = [
@@ -122,11 +122,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = 'patient_portal/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'patient_portal/static')
 
 MEDIA_URL = '/images/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'patient_portal/static/images')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
