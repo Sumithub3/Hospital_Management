@@ -1,8 +1,6 @@
 
 import os
 from pathlib import Path
-import django_on_heroku
-import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -16,8 +14,7 @@ SECRET_KEY = 'django-insecure-r8_%el-!s9_3$0hssoe35!8c!ku4n9k&@n#_(t_6142fvje8t1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['allcare-hospital.herokuapp.com','127.0.0.1:8000']
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -83,8 +80,8 @@ DATABASES = {
     }
 }
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -131,7 +128,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'patient_portal/static/images')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-django_on_heroku.settings(locals())
+# django_on_heroku.settings(locals())
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
